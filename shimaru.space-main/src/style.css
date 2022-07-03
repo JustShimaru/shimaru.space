@@ -1,0 +1,201 @@
+/* COLOR SCHEME https://coolors.co/221b14-43281c-48392a-c06e52-f96f5d-fbf2c0 */
+body {
+    background-color: #221B14;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center; 
+    height: 100vh;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  max-width: 100%;
+  max-height: 100%;
+  overflow-x: hidden;
+}
+
+.preloader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-repeat: no-repeat;
+  background-image: url('media/coffeeloading.jpg');
+  background-color: #43281C;
+  background-position: center;
+  background-attachment:fixed;
+  background-size: cover;
+}
+
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.shimaru-container {
+  margin-top: -45px;
+  background-image: url("media/Cafe.png");
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+
+}
+
+.shimaru-container-content {
+  top: 30%;
+  position: relative;
+}
+
+.shimaru-header {
+  color: #FBF2C0;
+  opacity: 0;
+  font-family: 'Noto Serif JP', serif;
+  animation: fade-head 1s ease-in-out forwards;
+  position: relative;
+  bottom: 0.6rem;
+  text-shadow: 0 0 5px black;
+}
+
+.shimaru-sh-jp {
+  color: #F96F5D;
+  opacity: 0;
+  font-family: 'Noto Serif JP', serif;
+  position:relative;
+  bottom: 2.8rem;
+  left: 5.86rem;
+  animation: fade-sh 1s ease-in-out forwards;
+  text-shadow: 0 0 5px black;
+}
+
+.shimaru-sh-dc {
+  color: #FBF2C0;
+  opacity: 0;
+  font-family: 'Karla', sans-serif;
+  position: relative;
+  bottom: 3.8rem;
+  font-size: 1.3em;
+  animation: fade-dc 1s ease-in-out forwards;
+  text-shadow: 0 0 5px black;
+}
+
+.shimaru-readmore {
+  color: #FBF2C0;
+  font-family: 'Kantumruy Pro', sans-serif;
+  background-color: transparent;
+  font-size: 1.93em;
+  text-transform: lowercase;
+  border: 1px solid #FBF2C0;
+  border-radius: 30px;
+  text-shadow: 0 0 5px black;
+  transition: transform 0.2s;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  bottom: 0.6rem;
+  opacity: 0;
+  animation: fade-head 1s ease-in-out forwards;
+}
+.shimaru-readmore:hover {
+transform: scale(1.048);
+filter: blur(.0px);
+backface-visibility: hidden;
+}
+
+.am-container {
+  margin-top: -45px;
+  background-image: url("media/ShimaruCoffeeShop.png");
+  background-repeat: no-repeat;
+  position:relative;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.am-whoami { /* existential crisis */
+top: 15%;
+color: #FBF2C0;
+font-family: 'Noto Serif JP', serif;
+position: relative;
+text-shadow: 0 0 5px black;
+}
+
+.txt1 { /* existential crisis */
+  color: #FBF2C0;
+  font-family: 'Noto Serif JP', serif;
+  position: relative;
+  left: -25%;
+}
+
+.hdr {
+  font-size: 2.575rem;
+}
+
+.am-top {
+  top: 15px;
+  position: relative;
+}
+
+.am-imgsq {
+  width: 100px;
+  height: 100px;
+}
+
+.am-bg {
+  position: relative;
+  text-align: center;
+  top: 20%;
+  left: 25%;
+  background-color: rgba(0,0,0,0.95);
+  width: 50%;
+  height: 60%;
+  border-radius: 5% / 10%;
+}
+
+
+.floating { 
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, 0px); }   
+}
+
+
+@keyframes fade-head { /* AAAAAAAAAAAAAA */
+to {
+  opacity: 1;
+  bottom: 0rem;
+  }
+}
+@keyframes fade-sh {
+to {
+  opacity: 1;
+  bottom: 2.2rem;
+  }
+}
+@keyframes fade-dc {
+to {
+  opacity: 1; 
+  bottom: 3.2rem;
+  }
+}
+
+
+
